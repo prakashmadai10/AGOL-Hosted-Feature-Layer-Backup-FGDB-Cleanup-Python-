@@ -160,6 +160,10 @@ can do:
     .env
     *.log
     ```
+## ❓ Why This Is Required
+
+ArcGIS Online FGDB exports accumulate quickly and consume storage.  
+Automating **daily backups** ensures data recovery and audit readiness, while **cleanup of exported FGDB items** keeps AGOL content organized, compliant, and cost-efficient.
 
 ---
 
