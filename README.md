@@ -1,4 +1,4 @@
-````md
+
 # AGOL Hosted Feature Layer Backup + FGDB Cleanup (Python)
 
 Automate **daily backups** of ArcGIS Online (AGOL) **Hosted Feature Layers** to **File Geodatabase exports** (downloaded locally as `.zip`), and optionally **cleanup/delete exported File Geodatabase items** from AGOL to avoid storage clutter.
@@ -7,32 +7,9 @@ This repo contains two scripts:
 1) **Backup**: Export & download Hosted Feature Layers as FGDB ZIPs  
 2) **Cleanup**: Delete **File Geodatabase** items from AGOL content (exports)
 
----
-
-## ✨ Features
-
-### ✅ Part 1 — Backup Hosted Feature Layers (FGDB Export)
-- Logs into AGOL using `.env`
-- Searches all **Feature Service** items owned by the authenticated user
-- Exports each service to **File Geodatabase**
-- Downloads FGDB export locally (`.zip` or `.gdb.zip`)
-- Skips already-backed-up exports if ZIP already exists
-- Uses **parallel processing** for faster exports
-- Keeps a **daily folder** structure and deletes local backups older than N days (default 15)
-- Writes logs to `agol_backup.log`
-
-### 🧹 Part 2 — Cleanup/Delete Exported FGDB Items in AGOL
-- Logs into AGOL using `.env`
-- Searches items of type **File Geodatabase**
-- Permanently deletes them (`permanent=True`)
-- Writes logs to `agol_fgdb_cleanup.log`
-- Returns a summary dictionary: `{"deleted": X, "failed": Y}`
-
----
 
 ## 📁 Repo Structure
 
-```text
 .
 ├── agol_backup_fgdb.py          # Part 1: Backup/export + (optional) calls cleanup
 ├── delete_fgdb_agol.py          # Part 2: Cleanup FGDB items in AGOL
