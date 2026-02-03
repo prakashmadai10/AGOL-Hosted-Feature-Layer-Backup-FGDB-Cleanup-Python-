@@ -78,12 +78,15 @@ PASSWORD=your_password
 ## ▶️ How it works
 
 The backup script:
-
 * Creates a daily folder like: `E:\AGOL_BACKUP_15DAYS\02_Feb_2026\`
-* Exports each Hosted Feature Layer (Feature Service) to File Geodatabase
-* Downloads the export to the daily folder
-* Skips exports if the ZIP already exists
-* Cleans local folders older than 15 days
+* Logs into AGOL using `.env`
+* Searches all **Feature Service** items owned by the authenticated user
+* Exports each service to **File Geodatabase**
+* Downloads FGDB export locally (`.zip` or `.gdb.zip`)
+* Skips already-backed-up exports if ZIP already exists
+* Uses **parallel processing** for faster exports
+* Keeps a **daily folder** structure and deletes local backups older than N days (default 15)
+* Writes logs to `agol_backup.log`
 
 ## ⚙️ Configure Local Backup Folder
 
