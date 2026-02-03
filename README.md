@@ -10,11 +10,11 @@ This repo contains two scripts:
 
 ## 📁 Repo Structure
 
-*├── agol_backup_fgdb.py          # Part 1: Backup/export + (optional) calls cleanup  
-*├── delete_fgdb_agol.py          # Part 2: Cleanup FGDB items in AGOL  
-*├── .env                         # Credentials (NOT committed)  
-*├── agol_backup.log              # Backup logs (generated)  
-*└── agol_fgdb_cleanup.log        # Cleanup logs (generated)  
+├── agol_backup_fgdb.py          # Part 1: Backup/export + (optional) calls cleanup  
+├── delete_fgdb_agol.py          # Part 2: Cleanup FGDB items in AGOL  
+├── .env                         # Credentials (NOT committed)  
+├── agol_backup.log              # Backup logs (generated)  
+└── agol_fgdb_cleanup.log        # Cleanup logs (generated)  
 
 
 ## 🔧 Requirements
