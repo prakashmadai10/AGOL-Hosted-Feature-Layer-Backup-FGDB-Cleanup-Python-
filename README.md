@@ -16,9 +16,7 @@ This repo contains two scripts:
 ├── .env                         # Credentials (NOT committed)
 ├── agol_backup.log              # Backup logs (generated)
 └── agol_fgdb_cleanup.log        # Cleanup logs (generated)
-````
 
----
 
 ## 🔧 Requirements
 
