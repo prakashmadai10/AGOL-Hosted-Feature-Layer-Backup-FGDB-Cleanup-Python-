@@ -42,11 +42,6 @@ PORTAL_URL=https://www.arcgis.com
 USERNAME=your_username
 PASSWORD=your_password
 ```
-
-> ✅ The scripts explicitly resolve `.env` relative to the script location.
-
----
-
 # PART 1 — Backup Hosted Feature Layers to FGDB (Local ZIP)
 
 ## ▶️ How it works
