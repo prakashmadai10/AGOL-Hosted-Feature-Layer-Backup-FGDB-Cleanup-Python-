@@ -1,7 +1,3 @@
-Below is a complete **GitHub README.md** that’s **divided into 2 parts**: **(1) Backup AGOL Hosted Feature Layers to FGDB** and **(2) Delete/cleanup exported FGDB items from AGOL**. It matches what your scripts do, including `.env` loading, logging, local folder retention, and the FGDB cleanup function.  
-
----
-
 ````md
 # AGOL Hosted Feature Layer Backup + FGDB Cleanup (Python)
 
